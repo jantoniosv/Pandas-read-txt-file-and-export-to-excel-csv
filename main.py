@@ -5,8 +5,7 @@ import pandas as pd
 
 # Leer el archivo de texto en pandas Dataframe y crear encabezados
 print("Leyendo archivo")
-df = pd.read_csv("./files/example.txt", sep="\t", header=None,
-                 names=["Name", "Team", "Number", "Position", "Age", "Height", "Weight", "College", "Salary"])
+df = pd.read_csv("./files/example.txt", sep="\t", names=["Name", "Team", "Number", "Position", "Age", "Height", "Weight", "College", "Salary"])
 # Exportar excel
 print("Generando excel")
 df.to_excel("./files/export.xlsx")
